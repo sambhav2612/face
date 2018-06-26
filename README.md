@@ -17,4 +17,4 @@ TODO
 
 ### License
 
-©2018 Sambhav Jain under MIT License [https://sambhav2612.mit-license.org](https://sambhav2612.mit-license.org)
+© 2018 Sambhav Jain under MIT License [(https://sambhav2612.mit-license.org)](https://sambhav2612.mit-license.org)
