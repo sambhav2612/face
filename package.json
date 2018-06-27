@@ -1,15 +1,33 @@
 {
-  "name": "face-check",
-  "version": "0.0.1",
+  "name": "mark-attendence",
+  "version": "0.0.2",
   "description": "Real-time face recognition system for protecting everyday employees from identity theft.",
   "main": "main.js",
   "author": "Sambhav Jain",
   "license": "MIT",
   "dependencies": {
     "@tensorflow/tfjs": "^0.11.7",
-    "micro": "^9.3.2"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "http": "^0.0.0",
+    "path": "^0.12.7",
+    "webcamjs": "^1.0.25"
   },
   "scripts": {
-    "start": "micro"
-  }
+    "start": "node main.js"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sambhav2612/face.git"
+  },
+  "keywords": [
+    "face detection",
+    "real-time",
+    "machine learning"
+  ],
+  "bugs": {
+    "url": "https://github.com/sambhav2612/face/issues"
+  },
+  "homepage": "https://github.com/sambhav2612/face#readme"
 }
