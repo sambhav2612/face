@@ -1,14 +1,15 @@
 {
-  "name": "face",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "name": "face-check",
+  "version": "0.0.1",
+  "description": "Real-time face recognition system for protecting everyday employees from identity theft.",
+  "main": "main.js",
   "author": "Sambhav Jain",
   "license": "MIT",
   "dependencies": {
-    "@tensorflow/tfjs": "^0.11.7"
+    "@tensorflow/tfjs": "^0.11.7",
+    "micro": "^9.3.2"
+  },
+  "scripts": {
+    "start": "micro"
   }
 }

@@ -1,0 +1,10 @@
+{
+    "name": "face-check",
+    "type": "npm",
+    "engines": {
+        "node": "^6.0.0"
+    },
+    "env": {
+        "NODE_ENV": "dev"
+    }
+}

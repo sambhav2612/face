@@ -1,0 +1,16 @@
+{
+    "editor.wordWrap": "on",
+    "[markdown]": {
+        "editor.wordWrap": "on",
+        "editor.quickSuggestions": false
+    },
+    "files.autoSave": "onFocusChange",
+    "editor.tabSize": 4,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    }
+}
