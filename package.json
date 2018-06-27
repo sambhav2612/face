@@ -1,22 +1,36 @@
 {
   "name": "mark-attendence",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Real-time face recognition system for protecting everyday employees from identity theft.",
   "main": "main.js",
   "author": "Sambhav Jain",
   "license": "MIT",
   "dependencies": {
     "@tensorflow/tfjs": "^0.11.7",
+    "apollo-server-express": "1",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "get-port": "^3.2.0",
+    "graphql": "^0.13.2",
+    "graphql-tools": "^3.0.4",
     "http": "^0.0.0",
     "path": "^0.12.7",
     "webcamjs": "^1.0.25"
   },
-  "scripts": {
-    "start": "node main.js"
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.12.1"
   },
-  "devDependencies": {},
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "scripts": {
+    "start": "nodemon ./main.js --exec babel-node",
+    "deploy": "now --public"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sambhav2612/face.git"

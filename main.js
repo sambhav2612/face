@@ -1,21 +1,41 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const path = require('path');
-const http = require('http');
+import express from 'express';
+import {
+    json,
+    urlencoded
+} from 'body-parser';
+import {
+    join
+} from 'path';
+import {
+    createServer
+} from 'http';
+import {
+    graphqlExpress,
+    graphiqlExpress
+} from 'apollo-server-express';
+import port from './port';
+import schema from './data/schema';
 
 const app = express();
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
+app.use(json());
+app.use(urlencoded({
     extended: false
 }));
 
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
+app.get('/', (req, res) => {
+    res.sendFile(join(__dirname, 'index.html'));
 });
 
-const PORT = process.env.PORT || 3000;
-app.set('port', PORT);
+app.use('/graphql', json(), graphqlExpress({
+    schema
+}));
 
-const server = http.createServer(app);
-server.listen(PORT, () => console.log(`App running on localhost:${PORT}`));
+app.use('/graphiql', graphiqlExpress({
+    endpointURL: '/graphql'
+}));
+
+app.set('port', port);
+
+const server = createServer(app);
+server.listen(port, () => console.log(`App running on localhost:${port}`));
