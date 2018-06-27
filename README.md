@@ -2,9 +2,11 @@
 
 Real-time face recognition system for protecting everyday employees from identity theft.
 
-## v0.0.3 update changelog
+## v0.0.4 changelog
 
-Add GraphQL for express to backend with port detection with babel transpiling for js.
+Add Webpack.
+
+**Expected update in v0.0.5**- Add a github bot to automate build and deploy process on Now.sh using webpack.
 
 ## Dependencies
 
@@ -14,15 +16,13 @@ Add GraphQL for express to backend with port detection with babel transpiling fo
 - GraphQL
 - Babel
 - Apollo
-- port-detect
+- Webpack
 
 ## Setup
 
 ```sh
 $ npm ci # or npm install
-installing packages...
 $ npm start
-App running on localhost:3000
 ```
 
 ## Usage

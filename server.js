@@ -13,7 +13,7 @@ import {
     graphqlExpress,
     graphiqlExpress
 } from 'apollo-server-express';
-import port from './port';
+import port from './assets/port';
 import schema from './data/schema';
 
 const app = express();

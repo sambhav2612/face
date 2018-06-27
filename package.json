@@ -1,8 +1,8 @@
 {
   "name": "mark-attendence",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Real-time face recognition system for protecting everyday employees from identity theft.",
-  "main": "main.js",
+  "main": "server.js",
   "author": "Sambhav Jain",
   "license": "MIT",
   "dependencies": {
@@ -19,17 +19,23 @@
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "nodemon": "^1.12.1"
-  },
-  "babel": {
-    "presets": [
-      "env"
-    ]
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "dotenv": "^6.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "nodemon": "^1.12.1",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
     "start": "nodemon ./main.js --exec babel-node",
-    "deploy": "now --public"
+    "compile": "webpack-dev-server --history-api-fallback --inline --progress",
+    "deploy": "now --public",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
