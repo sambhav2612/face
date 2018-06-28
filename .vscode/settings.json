@@ -14,5 +14,6 @@
         "**/.DS_Store": true
     },
     "python.autoComplete.addBrackets": true,
-    "python.envFile": "${workspaceFolder}/.env"
+    "python.envFile": "${workspaceFolder}/.env",
+    "python.pythonPath": "C:\\Users\\Sambhav Jain\\AppData\\Local\\Programs\\Python\\Python36-32\\python.exe"
 }

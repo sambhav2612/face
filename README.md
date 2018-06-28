@@ -14,10 +14,8 @@ Add Webpack.
 - Tensorflow.js
 - Now CLI
 - GraphQL
-- Babel
-- Apollo
-- Webpack
-- Pipenv
+- Babel, Apollo and Webpack
+- Python 3.6 and Pipenv
 
 ## Setup
 
@@ -26,6 +24,10 @@ $ git clone https://github.com/sambhav2612/face.git
 $ cd face
 $ npm ci # or npm install
 $ npm start
+# enter following command to build
+$ npm build
+# enter following command to deploy to now.sh
+$ npm deploy
 ```
 
 ## Usage

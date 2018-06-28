@@ -34,7 +34,7 @@
   "scripts": {
     "start": "nodemon ./main.js --exec babel-node",
     "compile": "webpack-dev-server --history-api-fallback --inline --progress",
-    "deploy": "now --public",
+    "deploy": "now --public ./dist",
     "build": "webpack"
   },
   "repository": {
