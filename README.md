@@ -17,10 +17,13 @@ Add Webpack.
 - Babel
 - Apollo
 - Webpack
+- Pipenv
 
 ## Setup
 
 ```sh
+$ git clone https://github.com/sambhav2612/face.git
+$ cd face
 $ npm ci # or npm install
 $ npm start
 ```

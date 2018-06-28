@@ -12,5 +12,7 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true
-    }
+    },
+    "python.autoComplete.addBrackets": true,
+    "python.envFile": "${workspaceFolder}/.env"
 }
