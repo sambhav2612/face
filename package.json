@@ -32,7 +32,7 @@
     "webpack-dev-server": "^3.1.4"
   },
   "scripts": {
-    "start": "nodemon ./main.js --exec babel-node",
+    "start": "nodemon ./server.js --exec babel-node",
     "compile": "webpack-dev-server --history-api-fallback --inline --progress",
     "deploy": "now --public ./dist",
     "build": "webpack"
